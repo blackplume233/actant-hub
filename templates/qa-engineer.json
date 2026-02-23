@@ -1,0 +1,22 @@
+{
+  "name": "qa-engineer",
+  "version": "1.0.0",
+  "description": "A QA testing agent — writes tests, runs test suites, and reports quality issues",
+  "backend": { "type": "claude-code" },
+  "provider": { "type": "anthropic" },
+  "domainContext": {
+    "skills": ["test-writer"],
+    "prompts": ["qa-assistant"],
+    "mcpServers": [
+      {
+        "name": "filesystem",
+        "command": "npx",
+        "args": ["-y", "@modelcontextprotocol/server-filesystem", "."]
+      }
+    ]
+  },
+  "metadata": {
+    "category": "web-dev",
+    "difficulty": "beginner"
+  }
+}

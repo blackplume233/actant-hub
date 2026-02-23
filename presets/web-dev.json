@@ -1,0 +1,9 @@
+{
+  "name": "web-dev",
+  "version": "1.0.0",
+  "description": "Web development preset — code review, testing, documentation, and file system access",
+  "skills": ["code-review", "test-writer", "doc-writer"],
+  "prompts": ["code-assistant"],
+  "mcpServers": ["filesystem"],
+  "templates": ["code-reviewer", "qa-engineer", "doc-writer"]
+}

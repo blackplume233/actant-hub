@@ -1,0 +1,29 @@
+{
+  "name": "actant-hub",
+  "version": "0.2.0",
+  "description": "Actant official component hub — skills, prompts, MCP configs, templates & presets",
+  "components": {
+    "skills": [
+      "skills/code-review.json",
+      "skills/test-writer.json",
+      "skills/doc-writer.json"
+    ],
+    "prompts": [
+      "prompts/code-assistant.json",
+      "prompts/qa-assistant.json"
+    ],
+    "mcp": [
+      "mcp/filesystem.json",
+      "mcp/memory-server.json"
+    ],
+    "templates": [
+      "templates/code-reviewer.json",
+      "templates/qa-engineer.json",
+      "templates/doc-writer.json"
+    ]
+  },
+  "presets": [
+    "presets/web-dev.json",
+    "presets/devops.json"
+  ]
+}

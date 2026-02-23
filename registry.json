@@ -1,0 +1,43 @@
+{
+  "$schema": "https://actant.dev/schemas/registry-v1.json",
+  "version": "1.0.0",
+  "lastUpdated": "2026-02-23",
+  "categories": {
+    "web-dev": {
+      "label": "Web Development",
+      "description": "Skills and templates for web development workflows — code review, testing, and documentation",
+      "presets": ["web-dev"],
+      "templates": ["code-reviewer", "qa-engineer", "doc-writer"]
+    },
+    "devops": {
+      "label": "DevOps & CI/CD",
+      "description": "Infrastructure, deployment, and CI/CD tooling — testing, documentation, and persistent memory",
+      "presets": ["devops"],
+      "templates": ["qa-engineer"]
+    }
+  },
+  "components": {
+    "skills": [
+      { "name": "code-review", "description": "Systematic code review — security, performance, maintainability checks", "tags": ["code-quality", "review", "best-practices"], "categories": ["web-dev"] },
+      { "name": "test-writer", "description": "Test writing with TDD principles — unit, integration, and edge case coverage", "tags": ["testing", "tdd", "quality"], "categories": ["web-dev", "devops"] },
+      { "name": "doc-writer", "description": "Technical documentation — READMEs, API docs, architecture docs, and guides", "tags": ["documentation", "writing", "technical-writing"], "categories": ["web-dev", "devops"] }
+    ],
+    "prompts": [
+      { "name": "code-assistant", "description": "General-purpose code assistant system prompt", "tags": ["coding", "assistant"], "categories": ["web-dev", "devops"] },
+      { "name": "qa-assistant", "description": "QA testing assistant system prompt", "tags": ["testing", "qa"], "categories": ["web-dev"] }
+    ],
+    "mcp": [
+      { "name": "filesystem", "description": "File system access — read, write, search project files", "tags": ["fs", "files", "essential"], "categories": ["web-dev", "devops"] },
+      { "name": "memory-server", "description": "Persistent memory — knowledge graph for long-term context", "tags": ["memory", "knowledge-graph"], "categories": ["devops"] }
+    ],
+    "templates": [
+      { "name": "code-reviewer", "description": "Code review agent with systematic review skills", "tags": ["review", "code-quality"], "categories": ["web-dev"] },
+      { "name": "qa-engineer", "description": "QA testing agent — writes and runs tests", "tags": ["testing", "qa"], "categories": ["web-dev", "devops"] },
+      { "name": "doc-writer", "description": "Documentation agent — writes technical docs and guides", "tags": ["documentation"], "categories": ["web-dev"] }
+    ],
+    "presets": [
+      { "name": "web-dev", "description": "Web development suite — review, testing, docs, filesystem", "tags": ["web", "fullstack"], "categories": ["web-dev"] },
+      { "name": "devops", "description": "DevOps suite — testing, docs, filesystem, memory", "tags": ["infra", "ci-cd"], "categories": ["devops"] }
+    ]
+  }
+}
