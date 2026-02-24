@@ -1,0 +1,18 @@
+{
+  "name": "cursor-agent",
+  "version": "1.0.0",
+  "description": "Cursor Agent — terminal-based AI coding agent bundled with Cursor",
+  "tags": ["agent", "tui", "cursor"],
+  "supportedModes": ["resolve", "open", "acp"],
+  "resolveCommand": { "win32": "agent", "default": "agent" },
+  "openCommand": { "win32": "agent", "default": "agent" },
+  "openWorkspaceDir": "cwd",
+  "openSpawnOptions": { "stdio": "inherit", "detached": false, "windowsHide": false },
+  "existenceCheck": {
+    "command": "agent",
+    "args": ["--version"]
+  },
+  "install": [
+    { "type": "manual", "label": "Included with Cursor", "instructions": "Install Cursor from https://cursor.com — the `agent` CLI is bundled." }
+  ]
+}

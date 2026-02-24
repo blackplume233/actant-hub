@@ -1,7 +1,7 @@
 {
   "name": "actant-hub",
-  "version": "0.3.0",
-  "description": "Actant official component hub — skills, prompts, MCP configs, templates & presets",
+  "version": "0.3.1",
+  "description": "Actant official component hub — skills, prompts, MCP configs, templates, backends & presets",
   "components": {
     "skills": [
       "skills/code-review.json",
@@ -20,6 +20,11 @@
       "templates/code-reviewer.json",
       "templates/qa-engineer.json",
       "templates/doc-writer.json"
+    ],
+    "backends": [
+      "backends/cursor.json",
+      "backends/cursor-agent.json",
+      "backends/claude-code.json"
     ]
   },
   "presets": [

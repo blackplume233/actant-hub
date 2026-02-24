@@ -1,0 +1,19 @@
+{
+  "name": "claude-code",
+  "version": "1.0.0",
+  "description": "Claude Code — Anthropic's terminal-based AI coding agent",
+  "tags": ["agent", "tui", "anthropic", "claude"],
+  "supportedModes": ["resolve", "open", "acp"],
+  "resolveCommand": { "win32": "claude-agent-acp.cmd", "default": "claude-agent-acp" },
+  "openCommand": { "win32": "claude.exe", "default": "claude" },
+  "openWorkspaceDir": "cwd",
+  "openSpawnOptions": { "stdio": "inherit", "detached": false, "windowsHide": false },
+  "resolvePackage": "@zed-industries/claude-agent-acp",
+  "existenceCheck": {
+    "command": "claude",
+    "args": ["--version"]
+  },
+  "install": [
+    { "type": "npm", "package": "@anthropic-ai/claude-code", "label": "npm install -g @anthropic-ai/claude-code" }
+  ]
+}

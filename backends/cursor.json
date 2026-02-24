@@ -1,0 +1,19 @@
+{
+  "name": "cursor",
+  "version": "1.0.0",
+  "description": "Cursor IDE — AI-powered code editor with built-in agent support",
+  "tags": ["ide", "gui", "editor"],
+  "supportedModes": ["resolve", "open"],
+  "resolveCommand": { "win32": "cursor.cmd", "default": "cursor" },
+  "openCommand": { "win32": "cursor.cmd", "default": "cursor" },
+  "openSpawnOptions": { "shell": true },
+  "existenceCheck": {
+    "command": "cursor",
+    "args": ["--version"]
+  },
+  "install": [
+    { "type": "url", "package": "https://cursor.com", "label": "Download Cursor" },
+    { "type": "brew", "package": "cursor", "label": "brew install --cask cursor", "platforms": ["darwin"] },
+    { "type": "winget", "package": "Anysphere.Cursor", "label": "winget install Anysphere.Cursor", "platforms": ["win32"] }
+  ]
+}
