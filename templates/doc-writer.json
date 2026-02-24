@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "A documentation agent — writes READMEs, API docs, architecture docs, and guides",
   "backend": { "type": "claude-code" },
-  "provider": { "type": "anthropic" },
   "domainContext": {
     "skills": ["doc-writer"],
     "prompts": ["code-assistant"],
