@@ -1,0 +1,11 @@
+{
+  "name": "pi",
+  "version": "1.0.0",
+  "description": "Pi — lightweight in-process AI agent powered by local/cloud LLMs",
+  "tags": ["agent", "in-process", "llm"],
+  "supportedModes": ["acp"],
+  "acpOwnsProcess": true,
+  "install": [
+    { "type": "manual", "label": "Included with Actant", "instructions": "Pi is bundled with Actant — no separate installation required." }
+  ]
+}

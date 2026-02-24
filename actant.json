@@ -24,7 +24,8 @@
     "backends": [
       "backends/cursor.json",
       "backends/cursor-agent.json",
-      "backends/claude-code.json"
+      "backends/claude-code.json",
+      "backends/pi.json"
     ]
   },
   "presets": [
