@@ -1,0 +1,34 @@
+name: Validate Hub
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  validate:
+    name: Validate Components
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Validate actant-hub
+        run: node scripts/validate.mjs --strict .
+
+      - name: JSON syntax check (redundant safety net)
+        run: |
+          failed=0
+          for f in $(find . -name '*.json' -not -path './.git/*'); do
+            if ! node -e "JSON.parse(require('fs').readFileSync('$f','utf-8'))" 2>/dev/null; then
+              echo "❌ Invalid JSON: $f"
+              failed=1
+            fi
+          done
+          if [ "$failed" = "1" ]; then exit 1; fi
+          echo "✅ All JSON files are valid"
