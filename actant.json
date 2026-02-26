@@ -41,8 +41,7 @@
       "prompts/spark-system-prompt.json"
     ],
     "mcp": [
-      "mcp/filesystem.json",
-      "mcp/memory-server.json"
+      "mcp/filesystem.json"
     ],
     "templates": [
       "templates/actant-steward.json",

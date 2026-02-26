@@ -36,7 +36,7 @@ Actant 官方组件仓库 — 提供平台级 Agent 模板、Skills、Prompts、
 | Templates | 8 | 内核 3 + 辅助 4 + 火种 1 |
 | Skills | 25 | 内核 9 + 辅助 12 + 火种 4 |
 | Prompts | 8 | 每个 Template 对应一个 system prompt |
-| MCP Servers | 2 | filesystem, memory-server |
+| MCP Servers | 1 | filesystem |
 | Presets | 4 | kernel, full, lite, contributor |
 
 ## Presets

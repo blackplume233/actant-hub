@@ -23,7 +23,7 @@
     "curator-system-prompt",
     "spark-system-prompt"
   ],
-  "mcpServers": ["filesystem", "memory-server"],
+  "mcpServers": ["filesystem"],
   "templates": [
     "actant-steward",
     "actant-maintainer",

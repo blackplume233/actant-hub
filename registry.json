@@ -61,8 +61,7 @@
       { "name": "spark-system-prompt", "description": "Spark 系统提示词", "tags": ["spark"], "categories": ["spark"] }
     ],
     "mcp": [
-      { "name": "filesystem", "description": "文件系统访问", "tags": ["fs"], "categories": ["kernel", "auxiliary", "spark"] },
-      { "name": "memory-server", "description": "记忆管理服务", "tags": ["memory"], "categories": ["kernel"] }
+      { "name": "filesystem", "description": "文件系统访问", "tags": ["fs"], "categories": ["kernel", "auxiliary", "spark"] }
     ],
     "templates": [
       { "name": "actant-steward", "description": "人类入口 (service)", "tags": ["steward", "service"], "categories": ["kernel"] },

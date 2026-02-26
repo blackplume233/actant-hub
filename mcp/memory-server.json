@@ -1,8 +1,0 @@
-{
-  "name": "memory-server",
-  "version": "1.0.0",
-  "description": "Memory management MCP server — provides memory CRUD, search, and governance operations",
-  "command": "npx",
-  "args": ["-y", "@actant/mcp-memory-server"],
-  "env": {}
-}

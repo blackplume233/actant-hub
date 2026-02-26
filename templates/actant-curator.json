@@ -11,7 +11,7 @@
       "lifecycle-policy"
     ],
     "prompts": ["curator-system-prompt"],
-    "mcpServers": ["memory-server"]
+    "mcpServers": []
   },
   "permissions": {
     "defaultMode": "bypassPermissions",
