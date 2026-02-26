@@ -40,9 +40,7 @@
       "prompts/onboarder-system-prompt.json",
       "prompts/spark-system-prompt.json"
     ],
-    "mcp": [
-      "mcp/filesystem.json"
-    ],
+    "mcp": [],
     "templates": [
       "templates/actant-steward.json",
       "templates/actant-maintainer.json",

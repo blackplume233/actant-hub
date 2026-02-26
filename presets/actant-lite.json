@@ -10,7 +10,7 @@
   "prompts": [
     "steward-system-prompt"
   ],
-  "mcpServers": ["filesystem"],
+  "mcpServers": [],
   "templates": [
     "actant-steward"
   ]

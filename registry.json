@@ -60,9 +60,7 @@
       { "name": "onboarder-system-prompt", "description": "Onboarder 系统提示词", "tags": ["onboarder"], "categories": ["auxiliary"] },
       { "name": "spark-system-prompt", "description": "Spark 系统提示词", "tags": ["spark"], "categories": ["spark"] }
     ],
-    "mcp": [
-      { "name": "filesystem", "description": "文件系统访问", "tags": ["fs"], "categories": ["kernel", "auxiliary", "spark"] }
-    ],
+    "mcp": [],
     "templates": [
       { "name": "actant-steward", "description": "人类入口 (service)", "tags": ["steward", "service"], "categories": ["kernel"] },
       { "name": "actant-maintainer", "description": "自修复免疫系统 (employee)", "tags": ["maintainer", "employee"], "categories": ["kernel"] },

@@ -12,7 +12,7 @@
       "contribution-policy"
     ],
     "prompts": ["spark-system-prompt"],
-    "mcpServers": ["filesystem"]
+    "mcpServers": []
   },
   "permissions": {
     "defaultMode": "bypassPermissions",

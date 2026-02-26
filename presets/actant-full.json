@@ -39,7 +39,7 @@
     "onboarder-system-prompt",
     "spark-system-prompt"
   ],
-  "mcpServers": ["filesystem"],
+  "mcpServers": [],
   "templates": [
     "actant-steward",
     "actant-maintainer",
