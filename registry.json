@@ -1,43 +1,84 @@
 {
   "$schema": "https://actant.dev/schemas/registry-v1.json",
   "version": "1.0.0",
-  "lastUpdated": "2026-02-23",
+  "lastUpdated": "2026-02-27",
   "categories": {
-    "web-dev": {
-      "label": "Web Development",
-      "description": "Skills and templates for web development workflows — code review, testing, and documentation",
-      "presets": ["web-dev"],
-      "templates": ["code-reviewer", "qa-engineer", "doc-writer"]
+    "kernel": {
+      "label": "Kernel Agents",
+      "description": "核心 Agent — 默认启用，构成 Actant 平台的基础运行时",
+      "presets": ["actant-kernel"],
+      "templates": ["actant-steward", "actant-maintainer", "actant-curator"]
     },
-    "devops": {
-      "label": "DevOps & CI/CD",
-      "description": "Infrastructure, deployment, and CI/CD tooling — testing, documentation, and persistent memory",
-      "presets": ["devops"],
-      "templates": ["qa-engineer"]
+    "auxiliary": {
+      "label": "Auxiliary Agents",
+      "description": "辅助 Agent — 按需启用，扩展平台功能",
+      "presets": ["actant-full"],
+      "templates": ["actant-updater", "actant-scavenger", "actant-researcher", "actant-onboarder"]
+    },
+    "spark": {
+      "label": "Spark Agent",
+      "description": "火种 Agent — 仅限贡献者，自主编码贡献者",
+      "presets": ["actant-contributor"],
+      "templates": ["actant-spark"]
     }
   },
   "components": {
     "skills": [
-      { "name": "code-review", "description": "Systematic code review — security, performance, maintainability checks", "tags": ["code-quality", "review", "best-practices"], "categories": ["web-dev"] },
-      { "name": "test-writer", "description": "Test writing with TDD principles — unit, integration, and edge case coverage", "tags": ["testing", "tdd", "quality"], "categories": ["web-dev", "devops"] },
-      { "name": "doc-writer", "description": "Technical documentation — READMEs, API docs, architecture docs, and guides", "tags": ["documentation", "writing", "technical-writing"], "categories": ["web-dev", "devops"] }
+      { "name": "intent-routing", "description": "意图识别与路由", "tags": ["intent", "routing"], "categories": ["kernel"] },
+      { "name": "conversation-management", "description": "会话管理", "tags": ["conversation", "context"], "categories": ["kernel"] },
+      { "name": "task-delegation", "description": "任务委派", "tags": ["delegation", "orchestration"], "categories": ["kernel"] },
+      { "name": "self-diagnosis", "description": "自诊断", "tags": ["diagnosis", "monitoring"], "categories": ["kernel"] },
+      { "name": "self-repair", "description": "自修复", "tags": ["repair", "recovery"], "categories": ["kernel"] },
+      { "name": "evolution-report", "description": "进化报告", "tags": ["evolution", "analytics"], "categories": ["kernel"] },
+      { "name": "memory-governance", "description": "记忆治理", "tags": ["memory", "governance"], "categories": ["kernel"] },
+      { "name": "asset-registry", "description": "资产注册", "tags": ["asset", "registry"], "categories": ["kernel"] },
+      { "name": "lifecycle-policy", "description": "生命周期策略", "tags": ["lifecycle", "retention"], "categories": ["kernel"] },
+      { "name": "version-check", "description": "版本检查", "tags": ["version", "update"], "categories": ["auxiliary"] },
+      { "name": "migration-engine", "description": "数据迁移引擎", "tags": ["migration", "schema"], "categories": ["auxiliary"] },
+      { "name": "rollback-strategy", "description": "回滚策略", "tags": ["rollback", "safety"], "categories": ["auxiliary"] },
+      { "name": "resource-scan", "description": "资源扫描", "tags": ["scan", "resource"], "categories": ["auxiliary"] },
+      { "name": "cleanup-policy", "description": "清理策略", "tags": ["cleanup", "policy"], "categories": ["auxiliary"] },
+      { "name": "capacity-monitor", "description": "容量监控", "tags": ["capacity", "monitoring"], "categories": ["auxiliary"] },
+      { "name": "web-research", "description": "网络研究", "tags": ["research", "web"], "categories": ["auxiliary"] },
+      { "name": "knowledge-synthesis", "description": "知识合成", "tags": ["synthesis", "knowledge"], "categories": ["auxiliary"] },
+      { "name": "source-evaluation", "description": "来源评估", "tags": ["evaluation", "credibility"], "categories": ["auxiliary"] },
+      { "name": "guided-setup", "description": "引导设置", "tags": ["setup", "onboarding"], "categories": ["auxiliary"] },
+      { "name": "interactive-tutorial", "description": "交互式教程", "tags": ["tutorial", "learning"], "categories": ["auxiliary"] },
+      { "name": "context-assessment", "description": "上下文评估", "tags": ["assessment", "personalization"], "categories": ["auxiliary"] },
+      { "name": "code-generation", "description": "代码生成", "tags": ["code", "generation"], "categories": ["spark"] },
+      { "name": "pr-management", "description": "PR 管理", "tags": ["pr", "github"], "categories": ["spark"] },
+      { "name": "self-bootstrap", "description": "自举", "tags": ["bootstrap", "autonomy"], "categories": ["spark"] },
+      { "name": "contribution-policy", "description": "贡献策略", "tags": ["contribution", "standards"], "categories": ["spark"] }
     ],
     "prompts": [
-      { "name": "code-assistant", "description": "General-purpose code assistant system prompt", "tags": ["coding", "assistant"], "categories": ["web-dev", "devops"] },
-      { "name": "qa-assistant", "description": "QA testing assistant system prompt", "tags": ["testing", "qa"], "categories": ["web-dev"] }
+      { "name": "steward-system-prompt", "description": "Steward 系统提示词", "tags": ["steward"], "categories": ["kernel"] },
+      { "name": "maintainer-system-prompt", "description": "Maintainer 系统提示词", "tags": ["maintainer"], "categories": ["kernel"] },
+      { "name": "curator-system-prompt", "description": "Curator 系统提示词", "tags": ["curator"], "categories": ["kernel"] },
+      { "name": "updater-system-prompt", "description": "Updater 系统提示词", "tags": ["updater"], "categories": ["auxiliary"] },
+      { "name": "scavenger-system-prompt", "description": "Scavenger 系统提示词", "tags": ["scavenger"], "categories": ["auxiliary"] },
+      { "name": "researcher-system-prompt", "description": "Researcher 系统提示词", "tags": ["researcher"], "categories": ["auxiliary"] },
+      { "name": "onboarder-system-prompt", "description": "Onboarder 系统提示词", "tags": ["onboarder"], "categories": ["auxiliary"] },
+      { "name": "spark-system-prompt", "description": "Spark 系统提示词", "tags": ["spark"], "categories": ["spark"] }
     ],
     "mcp": [
-      { "name": "filesystem", "description": "File system access — read, write, search project files", "tags": ["fs", "files", "essential"], "categories": ["web-dev", "devops"] },
-      { "name": "memory-server", "description": "Persistent memory — knowledge graph for long-term context", "tags": ["memory", "knowledge-graph"], "categories": ["devops"] }
+      { "name": "filesystem", "description": "文件系统访问", "tags": ["fs"], "categories": ["kernel", "auxiliary", "spark"] },
+      { "name": "memory-server", "description": "记忆管理服务", "tags": ["memory"], "categories": ["kernel"] }
     ],
     "templates": [
-      { "name": "code-reviewer", "description": "Code review agent with systematic review skills", "tags": ["review", "code-quality"], "categories": ["web-dev"] },
-      { "name": "qa-engineer", "description": "QA testing agent — writes and runs tests", "tags": ["testing", "qa"], "categories": ["web-dev", "devops"] },
-      { "name": "doc-writer", "description": "Documentation agent — writes technical docs and guides", "tags": ["documentation"], "categories": ["web-dev"] }
+      { "name": "actant-steward", "description": "人类入口 (service)", "tags": ["steward", "service"], "categories": ["kernel"] },
+      { "name": "actant-maintainer", "description": "自修复免疫系统 (employee)", "tags": ["maintainer", "employee"], "categories": ["kernel"] },
+      { "name": "actant-curator", "description": "本地资产管家 (employee)", "tags": ["curator", "employee"], "categories": ["kernel"] },
+      { "name": "actant-updater", "description": "版本升级 (employee)", "tags": ["updater", "employee"], "categories": ["auxiliary"] },
+      { "name": "actant-scavenger", "description": "垃圾清理 (employee)", "tags": ["scavenger", "employee"], "categories": ["auxiliary"] },
+      { "name": "actant-researcher", "description": "信息检索 (service)", "tags": ["researcher", "service"], "categories": ["auxiliary"] },
+      { "name": "actant-onboarder", "description": "引导教学 (tool)", "tags": ["onboarder", "tool"], "categories": ["auxiliary"] },
+      { "name": "actant-spark", "description": "自主编码贡献者 (employee)", "tags": ["spark", "employee"], "categories": ["spark"] }
     ],
     "presets": [
-      { "name": "web-dev", "description": "Web development suite — review, testing, docs, filesystem", "tags": ["web", "fullstack"], "categories": ["web-dev"] },
-      { "name": "devops", "description": "DevOps suite — testing, docs, filesystem, memory", "tags": ["infra", "ci-cd"], "categories": ["devops"] }
+      { "name": "actant-kernel", "description": "内核预设 — steward + maintainer + curator", "tags": ["kernel"], "categories": ["kernel"] },
+      { "name": "actant-full", "description": "完整预设 — 全部 8 templates", "tags": ["full"], "categories": ["kernel", "auxiliary", "spark"] },
+      { "name": "actant-lite", "description": "轻量预设 — steward only", "tags": ["lite"], "categories": ["kernel"] },
+      { "name": "actant-contributor", "description": "贡献者预设 — kernel + spark", "tags": ["contributor"], "categories": ["kernel", "spark"] }
     ]
   }
 }

@@ -1,9 +1,8 @@
 {
   "name": "memory-server",
   "version": "1.0.0",
-  "description": "Persistent memory MCP server — knowledge graph for long-term agent context",
-  "tags": ["memory", "knowledge-graph", "persistence"],
+  "description": "Memory management MCP server — provides memory CRUD, search, and governance operations",
   "command": "npx",
-  "args": ["-y", "@modelcontextprotocol/server-memory"],
+  "args": ["-y", "@actant/mcp-memory-server"],
   "env": {}
 }

@@ -1,9 +1,0 @@
-{
-  "name": "devops",
-  "version": "1.0.0",
-  "description": "DevOps preset — testing, documentation, file system and persistent memory for infrastructure work",
-  "skills": ["test-writer", "doc-writer"],
-  "prompts": ["code-assistant"],
-  "mcpServers": ["filesystem", "memory-server"],
-  "templates": ["qa-engineer"]
-}

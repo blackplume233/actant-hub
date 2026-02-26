@@ -1,9 +1,7 @@
 {
   "name": "filesystem",
   "version": "1.0.0",
-  "description": "File system access MCP server — read, write, search, and navigate project files",
-  "tags": ["fs", "files", "essential"],
+  "description": "Filesystem MCP server for file operations",
   "command": "npx",
-  "args": ["-y", "@modelcontextprotocol/server-filesystem", "."],
-  "env": {}
+  "args": ["-y", "@modelcontextprotocol/server-filesystem", "."]
 }
