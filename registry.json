@@ -48,7 +48,8 @@
       { "name": "code-generation", "description": "代码生成", "tags": ["code", "generation"], "categories": ["spark"] },
       { "name": "pr-management", "description": "PR 管理", "tags": ["pr", "github"], "categories": ["spark"] },
       { "name": "self-bootstrap", "description": "自举", "tags": ["bootstrap", "autonomy"], "categories": ["spark"] },
-      { "name": "contribution-policy", "description": "贡献策略", "tags": ["contribution", "standards"], "categories": ["spark"] }
+      { "name": "contribution-policy", "description": "贡献策略", "tags": ["contribution", "standards"], "categories": ["spark"] },
+      { "name": "agent-workspace-governance", "description": "仓库结构治理与 Agent 工作空间规范化", "tags": ["governance", "workspace", "structure-audit"], "categories": ["auxiliary"] }
     ],
     "prompts": [
       { "name": "steward-system-prompt", "description": "Steward 系统提示词", "tags": ["steward"], "categories": ["kernel"] },

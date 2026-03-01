@@ -28,7 +28,8 @@
       "skills/code-generation.json",
       "skills/pr-management.json",
       "skills/self-bootstrap.json",
-      "skills/contribution-policy.json"
+      "skills/contribution-policy.json",
+      "skills/agent-workspace-governance.json"
     ],
     "prompts": [
       "prompts/steward-system-prompt.json",
